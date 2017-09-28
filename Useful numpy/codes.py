@@ -28,6 +28,9 @@ d.keys()
 d.values()
 d.items()
 d.get(key) # returns value associated with key 
+import operator 
+sorted(d.items(), key = operator.itemgetter(1)) # sort items in the dictionary according to values from smallest 
+sorted(d.items(), key = operator.itemgetter(1), reverse = True) # from largest down  
      
 #Math functions: 
 import math as math 
