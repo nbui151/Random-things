@@ -83,6 +83,7 @@ data["var1"].fillna() # fill nas with 0
 data.dropna(how = "any")
 data[data['var1'].isnull()] # display the data where var1 is null
 data[data['var1'].notnull()]
+data[data['var1'].isnull().sum() # counts the number of null values
      
      
 data[data >= 0] # boolean indexing, returns all the other values as NaN
